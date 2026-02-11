@@ -1,0 +1,9 @@
+# GitHub Sponsors configuration
+# This adds a "Sponsor" button to your repository
+
+github: mazhar480
+
+# Optional: Add other platforms when you set them up
+# patreon: yourusername
+# ko_fi: yourusername
+# custom: ["https://yourwebsite.com/donate"]
