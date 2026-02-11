@@ -48,3 +48,6 @@ Thumbs.db
 # Environment variables
 .env.local
 .env.*.local
+
+# Private files
+MONETIZATION.md
