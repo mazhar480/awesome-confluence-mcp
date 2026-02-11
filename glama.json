@@ -1,0 +1,103 @@
+{
+    "name": "awesome-confluence-mcp",
+    "version": "1.0.0",
+    "description": "The most token-efficient way for AI agents to browse and analyze Confluence documentation. Converts pages to Markdown, saving 60-80% on LLM tokens.",
+    "author": {
+        "name": "mazhar480",
+        "url": "https://github.com/mazhar480"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mazhar480/awesome-confluence-mcp"
+    },
+    "homepage": "https://github.com/mazhar480/awesome-confluence-mcp#readme",
+    "license": "MIT",
+    "keywords": [
+        "mcp-server",
+        "confluence-api",
+        "ai-agents",
+        "token-optimization",
+        "markdown",
+        "fastmcp",
+        "llm",
+        "confluence",
+        "atlassian",
+        "model-context-protocol"
+    ],
+    "mcp": {
+        "server": {
+            "command": "python",
+            "args": [
+                "-m",
+                "server"
+            ],
+            "env": {
+                "CONFLUENCE_URL": "https://your-domain.atlassian.net",
+                "CONFLUENCE_EMAIL": "your.email@example.com",
+                "CONFLUENCE_API_TOKEN": "your_api_token_here"
+            }
+        },
+        "tools": [
+            {
+                "name": "list_spaces",
+                "description": "List all Confluence spaces accessible to the authenticated user",
+                "parameters": {
+                    "limit": {
+                        "type": "integer",
+                        "description": "Maximum number of spaces to return (1-100, default: 25)",
+                        "default": 25,
+                        "minimum": 1,
+                        "maximum": 100
+                    }
+                }
+            },
+            {
+                "name": "search_pages",
+                "description": "Search for Confluence pages by title or content",
+                "parameters": {
+                    "query": {
+                        "type": "string",
+                        "description": "Search query string to match against page titles and content",
+                        "required": true
+                    },
+                    "space_key": {
+                        "type": "string",
+                        "description": "Optional space key to limit search to a specific space"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "description": "Maximum number of results to return (1-50, default: 10)",
+                        "default": 10,
+                        "minimum": 1,
+                        "maximum": 50
+                    }
+                }
+            },
+            {
+                "name": "fetch_page_markdown",
+                "description": "Fetch a Confluence page and convert it to Markdown format. Reduces token usage by 60-80% compared to raw HTML.",
+                "parameters": {
+                    "page_id": {
+                        "type": "string",
+                        "description": "The Confluence page ID to fetch",
+                        "required": true
+                    }
+                }
+            }
+        ],
+        "resources": [],
+        "prompts": []
+    },
+    "categories": [
+        "documentation",
+        "knowledge-management",
+        "productivity"
+    ],
+    "tags": [
+        "confluence",
+        "atlassian",
+        "markdown",
+        "token-optimization",
+        "documentation"
+    ]
+}
