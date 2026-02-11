@@ -6,6 +6,10 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-green)](https://www.python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
+<a href="https://glama.ai/mcp/servers/@mazhar480/awesome-confluence-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@mazhar480/awesome-confluence-mcp/badge" alt="Glama MCP Server Badge" />
+</a>
+
 **Topics:** `mcp-server` `python` `confluence-api` `ai-agents` `token-optimization` `markdown` `fastmcp`
 
 ---
