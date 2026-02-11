@@ -5,14 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "awesome-confluence-mcp"
 version = "1.0.0"
-description = "Token-efficient Confluence MCP server that converts pages to Markdown"
+description = "The most token-efficient way for AI agents to browse and analyze Confluence documentation. Converts pages to Markdown, saving 60-80% on LLM tokens."
 authors = [
     { name = "mazhar480", email = "your.email@example.com" }
 ]
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
-keywords = ["mcp", "confluence", "markdown", "ai", "llm"]
+keywords = ["mcp-server", "confluence-api", "ai-agents", "token-optimization", "markdown", "fastmcp", "llm", "confluence", "atlassian", "model-context-protocol"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

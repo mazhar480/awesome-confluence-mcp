@@ -1,8 +1,23 @@
-# 🚀 Awesome Confluence MCP
+# 🚀 Awesome Confluence MCP Server
+
+**The most token-efficient way for AI agents to browse and analyze Confluence documentation.**
 
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
 [![Python](https://img.shields.io/badge/Python-3.10+-green)](https://www.python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
+**Topics:** `mcp-server` `python` `confluence-api` `ai-agents` `token-optimization` `markdown` `fastmcp`
+
+---
+
+## 📊 Token Savings at a Glance
+
+**Typical Confluence Page (2,000 words):**
+
+| Format | Tokens (Avg) | Cost (GPT-4o) | Savings |
+|--------|--------------|---------------|---------|
+| Raw HTML | 2,500 | $0.075 | - |
+| **Your Markdown** | **600** | **$0.018** | **76%** |
 
 > **Save 60-80% on LLM tokens** by converting Confluence pages to clean Markdown format.
 
@@ -248,16 +263,34 @@ black .
 ruff check .
 ```
 
-## 📊 Token Comparison Example
+## 🧪 Testing with MCP Inspector
 
-**Typical Confluence Page (2,000 words):**
+Want to test the tools without writing a full client? FastMCP includes a built-in MCP Inspector:
 
-| Format | Tokens | Cost (GPT-4) | Savings |
-|--------|--------|--------------|---------|
-| HTML | ~2,500 | $0.075 | - |
-| Markdown | ~600 | $0.018 | **76%** |
+```bash
+npx @modelcontextprotocol/inspector python server.py
+```
 
-*Based on average token costs. Actual savings may vary.*
+This launches a web interface where you can:
+- ✅ Test all three tools interactively
+- ✅ See real-time request/response data
+- ✅ Validate your Confluence credentials
+- ✅ Experiment with different parameters
+
+**Perfect for:** Quick testing, debugging, and demonstrating the server to others.
+
+## 💰 Sponsorship & Support
+
+If this MCP server saves you time and tokens, consider sponsoring its development:
+
+- **Individual Developers:** [GitHub Sponsors](https://github.com/sponsors/mazhar480)
+- **Corporate Teams:** I support **GitHub Invoiced Billing** for bulk sponsorships. [Contact me](mailto:your.email@example.com) for custom MCP development and enterprise support.
+
+**Why sponsor?**
+- Priority bug fixes and feature requests
+- Custom tool development for your workflow
+- Direct support and consultation
+- Help maintain this free, open-source tool
 
 ## 🤝 Contributing
 
